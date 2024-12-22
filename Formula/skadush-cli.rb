@@ -9,8 +9,11 @@ class SkadushCli < Formula
     head "https://github.com/mskadush/skadush-cli.git"
   
     def install
-        # build/distributions/cli-1.1-SNAPSHOT/bin/cli
         bin.install "app/cli-1.1-SNAPSHOT/scripts/cli" => "skadush-cli"
+        # Install all executables from a subfolder
+        Dir["app/cli-1.1-SNAPSHOT/libs/*"].each do |f|
+            bin.install f
+        end
     end
   
     # Homebrew requires tests.
