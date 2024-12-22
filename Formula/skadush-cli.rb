@@ -1,4 +1,5 @@
 require "formula"
+require_relative "../custom_download_strategy.rb"
 
 class Mytool < Formula
     desc "Skadush's super secret aliases"
