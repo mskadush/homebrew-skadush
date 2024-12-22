@@ -4,7 +4,7 @@ require_relative "../custom_download_strategy.rb"
 class SkadushCli < Formula
     desc "Skadush's super secret aliases"
     homepage "https://https://github.com/mskadush"
-    url "https://github.com/mskadush/skadush-cli/blob/main/app/cli-1.0.0.tar", :using => GitHubPrivateRepositoryDownloadStrategy
+    url "https://github.com/mskadush/skadush-cli/blob/main/app/cli-1.0.0.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
     # sha256 "<SHA256 CHECKSUM>"
     head "https://github.com/mskadush/skadush-cli.git"
   
