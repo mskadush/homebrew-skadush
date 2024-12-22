@@ -9,9 +9,9 @@ class SkadushCli < Formula
     head "https://github.com/mskadush/skadush-cli.git"
   
     def install
-        bin.install "app/cli-1.1-SNAPSHOT/scripts/cli" => "skadush-cli"
+        # bin.install "app/cli-1.1-SNAPSHOT/scripts/cli" => "skadush-cli"
         # Install all executables from a subfolder
-        Dir["app/cli-1.1-SNAPSHOT/libs/*"].each do |f|
+        Dir["app/cli-1.1-SNAPSHOT/*/**"].each do |f|
             bin.install f
         end
     end
