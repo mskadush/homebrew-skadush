@@ -1,7 +1,7 @@
 require "formula"
 require_relative "../custom_download_strategy.rb"
 
-class Mytool < Formula
+class SkadushCli < Formula
     desc "Skadush's super secret aliases"
     homepage "https://https://github.com/mskadush"
     url "https://github.com/mskadush/skadush-cli/blob/main/app/cli-1.1-SNAPSHOT.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
